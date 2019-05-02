@@ -1,0 +1,8 @@
+app/app.iml
+local.properties
+
+.gradle/
+.idea/
+Settings_Rel1_01.iml
+app/build/
+build/

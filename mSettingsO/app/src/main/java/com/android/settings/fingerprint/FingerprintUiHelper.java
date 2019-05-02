@@ -1,0 +1,240 @@
+/*
+ * Copyright (C) 2015 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License
+ */
+
+package com.android.settings.fingerprint;
+
+import android.hardware.fingerprint.FingerprintManager;
+import android.os.CancellationSignal;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.android.settings.R;
+import com.android.settings.Utils;
+
+import android.util.Log;
+import android.provider.Settings;
+import android.content.Context;
+import android.os.CountDownTimer;
+import android.os.SystemClock;
+import com.android.internal.widget.LockPatternUtils;
+import tct.applock.AppLockHelperImpl;
+
+/**
+ * Small helper class to manage text/icon around fingerprint authentication UI.
+ */
+public class FingerprintUiHelper extends FingerprintManager.AuthenticationCallback {
+
+    private static final long ERROR_TIMEOUT = 1300;
+    private static final long FINDERPRINT_LOCK_RESET_TIME = 30000;  //added by jianhao.zeng for XR7225621 on 2018/12/24
+    private final String TAG = "FingerprintUiHelper"; //added by jianhao.zeng for XR7225621 on 2018/12/24
+
+    private ImageView mIcon;
+    private TextView mErrorTextView;
+    private CancellationSignal mCancellationSignal;
+    private int mUserId;
+
+    private Callback mCallback;
+    private FingerprintManager mFingerprintManager;
+
+    private Context mContext; //added by dongchi.chen for XR7210352 on 20181205
+    //Begin added by jianhao.zeng for XR7225621 on 2018/12/24
+    private CountDownTimer mCountdownTimer;
+    private long elapsedRealtimeDeadline;
+    private AppLockHelperImpl mAppLockHelper;
+    //End added by jianhao.zeng for XR7225621 on 2018/12/24
+
+    public FingerprintUiHelper(ImageView icon, TextView errorTextView, Callback callback,
+            int userId) {
+        mFingerprintManager = Utils.getFingerprintManagerOrNull(icon.getContext());
+        mIcon = icon;
+        mErrorTextView = errorTextView;
+        mCallback = callback;
+        mUserId = userId;
+        mContext = icon.getContext(); //added by dongchi.chen for XR7210352 on 20181205
+        mAppLockHelper = new AppLockHelperImpl(mContext); //added by jianhao.zeng for XR7225621 on 2018/12/24
+    }
+    //Begin added by dongchi.chen for XR6167866
+    private  boolean mIsAppsLock = false;
+    public void setIsAppsLock(boolean val){
+        mIsAppsLock = val;
+    }
+    //End added by dongchi.chen for XR6167866
+    public void startListening() {
+        if (mFingerprintManager != null && mFingerprintManager.isHardwareDetected()
+                && mFingerprintManager.getEnrolledFingerprints(mUserId).size() > 0) {
+            mCancellationSignal = new CancellationSignal();
+            mFingerprintManager.setActiveUser(mUserId);
+            mFingerprintManager.authenticate(
+                    null, mCancellationSignal, 0 /* flags */, this, null, mUserId);
+            setFingerprintIconVisibility(true);
+            //Begin modified by dongchi.chen for XR6167866
+            if(mIsAppsLock) {
+                mIcon.setImageResource(R.drawable.ic_appslock_fingerprint);
+            }else {
+                mIcon.setImageResource(R.drawable.ic_fingerprint);
+            }
+            //End modified by dongchi.chen for XR6167866
+        }
+    }
+
+    public void stopListening() {
+        if (mCancellationSignal != null) {
+            mCancellationSignal.cancel();
+            mCancellationSignal = null;
+        }
+        //Begin added by jianhao.zeng for XR7225621 on 2018/12/24
+        if(mCountdownTimer != null) {
+            mCountdownTimer.cancel(); 
+        }
+        //End added by jianhao.zeng for XR7225621 on 2018/12/24
+    }
+
+    public boolean isListening() {
+        return mCancellationSignal != null && !mCancellationSignal.isCanceled();
+    }
+
+    private void setFingerprintIconVisibility(boolean visible) {
+        mIcon.setVisibility(visible ? View.VISIBLE : View.GONE);
+        mCallback.onFingerprintIconVisibilityChanged(visible);
+    }
+
+    @Override
+    public void onAuthenticationError(int errMsgId, CharSequence errString) {
+        //Begin added by dongchi.chen for XRP10025811 on 21081110
+        if(errMsgId == FingerprintManager.FINGERPRINT_ERROR_CANCELED){
+            return;
+        }
+        //End added by dongchi.chen for XRP10025811 on 21081110
+        showError(errString);
+        setFingerprintIconVisibility(false);
+        //Begin added by jianhao.zeng for XR7225621 on 2018/12/24 
+        if(getAppsLockFingerPrintLockoutAttemptDeadline() == 0L) {
+           elapsedRealtimeDeadline = setAppsLockFingerPrintLockoutAttemptDeadline(FINDERPRINT_LOCK_RESET_TIME);
+           mCountdownTimer = null; // Reset last mCountdownTimer object because the last mCountdownTimer have finished.
+        } else {
+           elapsedRealtimeDeadline = getAppsLockFingerPrintLockoutAttemptDeadline();
+        }
+        if (null == mCountdownTimer) {
+           long elapsedRealtime = SystemClock.elapsedRealtime();
+           mCountdownTimer = new CountDownTimer(
+                elapsedRealtimeDeadline - elapsedRealtime,
+               LockPatternUtils.FAILED_ATTEMPT_COUNTDOWN_INTERVAL_MS) {
+
+             @Override
+             public void onTick(long millisUntilFinished) {
+             }
+
+             @Override
+             public void onFinish() {
+                resetFingerprintIfNeed();                
+                startListening();
+             }
+          }.start();
+        }
+       //End added by jianhao.zeng for XR7225621 on 2018/12/24 
+    }
+
+    @Override
+    public void onAuthenticationHelp(int helpMsgId, CharSequence helpString) {
+        //Begin modified by dongchi.chen for XR5855478 on 18-1-8
+        //old  showError(helpString);
+        boolean isHelpMsgIdShow = true;
+        if (helpMsgId > 1000 && helpMsgId < 1007) {
+            isHelpMsgIdShow = false;
+            //do not show some help msg when fingerprint authentication in systemUI
+        }
+        if (isHelpMsgIdShow) {
+            showError(helpString);
+        }
+        //End modified by dongchi.chen for XR5855478 on 18-1-8
+    }
+
+    @Override
+    public void onAuthenticationFailed() {
+        showError(mIcon.getResources().getString(
+                R.string.fingerprint_not_recognized));
+    }
+
+    @Override
+    public void onAuthenticationSucceeded(FingerprintManager.AuthenticationResult result) {
+        mIcon.setImageResource(R.drawable.ic_fingerprint_success);
+        mCallback.onAuthenticated();
+    }
+
+    private void showError(CharSequence error) {
+        if (!isListening()) {
+            return;
+        }
+
+        mIcon.setImageResource(R.drawable.ic_fingerprint_error);
+        mErrorTextView.setText(error);
+        mErrorTextView.removeCallbacks(mResetErrorTextRunnable);
+        mErrorTextView.postDelayed(mResetErrorTextRunnable, ERROR_TIMEOUT);
+    }
+
+    private Runnable mResetErrorTextRunnable = new Runnable() {
+        @Override
+        public void run() {
+            mErrorTextView.setText("");
+            //Begin modified by dongchi.chen for XR6167866
+            if(mIsAppsLock) {
+                mIcon.setImageResource(R.drawable.ic_appslock_fingerprint);
+            }else {
+                mIcon.setImageResource(R.drawable.ic_fingerprint);
+            }
+            //End modified by dongchi.chen for XR6167866
+        }
+    };
+
+    public interface Callback {
+        void onAuthenticated();
+        void onFingerprintIconVisibilityChanged(boolean visible);
+    }
+    //Begin added by jianhao.zeng for XR7225621 on 2018/12/24
+    public long setAppsLockFingerPrintLockoutAttemptDeadline(long timeoutMs){
+        final long deadline = SystemClock.elapsedRealtime() + timeoutMs;
+        Settings.System.putLong(mContext.getContentResolver(), "apps_lock_fingerprint_lockout_attempt_deadline", deadline);
+        Settings.System.putLong(mContext.getContentResolver(), "apps_lock_fingerprint_lockout_attempt_timeout", timeoutMs);
+        return deadline;
+    }
+
+    public long getAppsLockFingerPrintLockoutAttemptDeadline() {
+        final long deadline = Settings.System.getLong(mContext.getContentResolver(), "apps_lock_fingerprint_lockout_attempt_deadline", 0L);
+        final long timeoutMs = Settings.System.getLong(mContext.getContentResolver(), "apps_lock_fingerprint_lockout_attempt_timeout", 0L);
+        final long now = SystemClock.elapsedRealtime();
+        if (deadline < now || deadline > (now + timeoutMs)) {
+            return 0L;
+        }
+        return deadline;
+    }
+    
+    private void resetFingerprintIfNeed(){
+        try {
+            if(mAppLockHelper.isFingerprintUnlockAppsLockEnable()) {
+                if (null != mFingerprintManager
+                        && mFingerprintManager.isHardwareDetected()
+                        && mFingerprintManager.hasEnrolledFingerprints(0)) {
+                    Log.d(TAG, "resetFingerprint");
+                    mFingerprintManager.resetTimeout(null);
+                }
+            }
+        }catch (Exception e){
+            Log.e(TAG, "resetFingerprint error - " + e.getMessage());
+        }
+    }
+    //End added by jianhao.zeng for XR7225621 on 2018/12/24
+}

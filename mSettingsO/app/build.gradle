@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.1'
+    defaultConfig {
+        applicationId "com.android.settings"
+        minSdkVersion 24
+        targetSdkVersion 27
+        versionCode Integer.valueOf("201902011")
+        versionName "v8.1.0.0123.0"
+        renderscriptTargetApi 27
+        multiDexEnabled true
+        /*jackOptions {
+            enabled true
+        }*/
+    }
+        lintOptions {
+            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+            abortOnError false
+        }
+
+    signingConfigs {
+        release {
+            storeFile file("../signFile/tctplatform.jks")
+            storePassword '123456'
+            keyAlias '1'
+            keyPassword '123456'
+        }
+
+        debug {
+            storeFile file("../signFile/tctplatform.jks")
+            storePassword '123456'
+            keyAlias '1'
+            keyPassword '123456'
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.pro'
+            signingConfig(signingConfigs.release)
+        }
+        debug {
+            minifyEnabled false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.pro'
+            signingConfig(signingConfigs.debug)
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    productFlavors {
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    //compile fileTree(include: ['*.jar'], dir: 'libs')
+    compileOnly files('libs/framework.jar')
+    compileOnly files('libs/core-oj.jar')
+    implementation 'com.google.android:multidex:0.1'
+    implementation(name: 'setup-wizard-lib-for-Android_7.0+', ext: 'aar')
+    implementation(name: 'appcompat-v7-release', ext: 'aar')
+    implementation(name: 'cardview-v7-release', ext: 'aar')
+    implementation(name: 'preference-v7-release', ext: 'aar')
+    implementation(name: 'recyclerview-v7-release', ext: 'aar')
+    implementation(name: 'preference-v14-release', ext: 'aar')
+    implementation(name: 'support-v13-release', ext: 'aar')
+    implementation(name: 'support-compat-release', ext: 'aar')
+    implementation files('libs/support-v4-release.jar')
+    compileOnly files('libs/bouncycastle.jar')
+    implementation files('libs/mtksettings-logtags.jar')
+    compileOnly files('libs/ims-common.jar')
+    implementation files('libs/jsr305.jar')
+    //compileOnly files('libs/TctSdkEncap.jar')
+    compileOnly 'com.tct.sdk:tct-sdk:1.0.+'
+    compileOnly files('libs/core.jar')
+    compileOnly files('libs/telephony-common.jar')
+    compileOnly files('libs/com.tct.nfc.jar')
+    compileOnly files('libs/com.gsma.services.nfc.jar')
+    //Added by yunqi.song.hz for JoyUI dualApp TASK 6766810
+    compileOnly files('libs/tct-framework.jar')
+}

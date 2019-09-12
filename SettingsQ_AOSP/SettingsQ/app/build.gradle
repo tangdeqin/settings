@@ -1,0 +1,118 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+//apply plugin: 'me.tatarka.retrolambda'
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29.0.0'
+    defaultConfig {
+        applicationId "com.android.settings"
+        minSdkVersion 26
+        targetSdkVersion 29
+        versionCode Integer.valueOf("201906271")
+        versionName "v9.1.0.0107.0"
+        renderscriptTargetApi 29
+        multiDexEnabled true
+        /*jackOptions {
+            enabled true
+        }*/
+    }
+    lintOptions {
+            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+            abortOnError false
+     }
+
+    signingConfigs {
+        release {
+            storeFile file("../signFile/platform.jks")
+            storePassword '123456'
+            keyAlias '1'
+            keyPassword '123456'
+        }
+
+        debug {
+            storeFile file("../signFile/platform.jks")
+            storePassword '123456'
+            keyAlias '1'
+            keyPassword '123456'
+        }
+       }
+   packagingOptions {
+       exclude  'META-INF/*'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.pro'
+            signingConfig(signingConfigs.release)
+        }
+        debug {
+            minifyEnabled false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.pro'
+            signingConfig(signingConfigs.debug)
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    productFlavors {
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    mavenCentral()
+}
+
+
+
+dependencies {
+    implementation 'com.google.android:multidex:0.1'
+    implementation(name: 'appcompat-1.0.0', ext: 'aar')
+    implementation(name: 'recyclerview-1.0.0', ext: 'aar')
+    
+    implementation(name: 'contextualcards', ext: 'aar')
+    implementation 'androidx.slice:slice-builders:1.0.0'
+    implementation 'androidx.slice:slice-view:1.0.0'
+    implementation 'androidx.slice:slice-core:1.0.0'
+    
+     implementation(name: 'androidx-preference-1.0.0', ext: 'aar')
+    implementation(name: 'cardview-1.0.0', ext: 'aar')
+    implementation(name: 'fragment-1.0.0', ext: 'aar')
+    implementation(name: 'core-1.0.0', ext: 'aar')
+    implementation(name: 'customview-1.0.0', ext: 'aar')
+    implementation(name: 'loader-1.0.0', ext: 'aar')
+    implementation(name: 'localbroadcastmanager-1.0.0', ext: 'aar')
+    implementation(name: 'coordinatorlayout-1.0.0', ext: 'aar')
+    implementation(name: 'drawerlayout-1.0.0',ext:'aar')
+    implementation(name: 'mediarouter-1.0.0',ext:'aar')
+    implementation(name: 'material-1.0.0',ext:'aar')
+    implementation files('libs/logtags.jar')
+
+    compileOnly files('libs/lifecycle-common-2.0.0.jar')
+    compileOnly files('libs/lifecycle-runtime.jar')
+    compileOnly files('libs/lifecycle-extensions.jar')
+    compileOnly files('libs/annotation-1.0.2.jar')
+    compileOnly files('libs/bouncycastle.jar')
+    //compileOnly files('libs/guava.jar')
+    implementation files('libs/guava-22.0.jar')
+    //implementation files('libs/jsr305.jar')
+    compileOnly files('libs/jsr305-1.3.9.jar')
+    compileOnly files('libs/framework.jar')
+    compileOnly files('libs/ims-common.jar')
+    compileOnly files('libs/telephony-common.jar')
+    compileOnly files('libs/core-3.3.2.jar')
+    compileOnly files('libs/core-oj.jar')
+    compileOnly files('libs/core-lib.jar')
+    compileOnly files('libs/ContextualCardProto.jar')
+    compileOnly files('libs/javapoet-1.8.0.jar')
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}

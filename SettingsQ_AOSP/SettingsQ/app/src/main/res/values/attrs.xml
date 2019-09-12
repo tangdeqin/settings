@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <declare-styleable name="PercentageBarChart">
+        <!-- Background color -->
+        <attr name="emptyColor" format="color" />
+        <!-- Minimum tick width for each slice in the bar chart. -->
+        <attr name="minTickWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ChartView">
+        <!-- optimal width of the chart -->
+        <attr name="optimalWidth" format="dimension" />
+        <!-- how to weight extra space beyond optimal width -->
+        <attr name="optimalWidthWeight" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="ChartSweepView">
+        <attr name="sweepDrawable" format="reference" />
+        <attr name="followAxis">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="neighborMargin" format="dimension" />
+        <attr name="labelSize" format="dimension" />
+        <attr name="labelTemplate" format="reference" />
+        <attr name="labelColor" format="color" />
+        <attr name="safeRegion" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ChartGridView">
+        <attr name="primaryDrawable" format="reference" />
+        <attr name="secondaryDrawable" format="reference" />
+        <attr name="borderDrawable" format="reference" />
+        <attr name="android:textColor" />
+        <attr name="android:textAppearance" />
+    </declare-styleable>
+
+    <attr name="apnPreferenceStyle" format="reference" />
+
+    <attr name="slicePreferenceStyle" format="reference" />
+
+    <attr name="cardPreferenceStyle" format="reference" />
+
+
+    <declare-styleable name="FixedLineSummaryPreference">
+        <attr name="summaryLineCount" format="integer" />
+    </declare-styleable>
+
+    <!-- For Search -->
+    <declare-styleable name="Preference">
+        <!-- Synonyms for search results -->
+        <attr name="keywords" format="string" />
+        <!-- Whether or not the preference is searchable, by default it's true. -->
+        <attr name="searchable" format="boolean" />
+        <!-- Classname of a PreferenceController corresponding to the preference -->
+        <attr name="controller" format="string" />
+        <!-- {@code true} when the controller declared represents a slice from {@link android.app.SettingsSliceContract} -->
+        <attr name="platform_slice" format="boolean" />
+        <!-- customized subtitle if it's an unavailable slice -->
+        <attr name="unavailableSliceSubtitle" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="PreferenceScreen">
+        <!-- Determines if static preferences defined in addStaticPreferences are added before or after the radio buttons -->
+        <attr name="staticPreferenceLocation">
+            <enum name="prepend" value="0" />
+            <enum name="append" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!-- For DotsPageIndicator -->
+    <declare-styleable name="DotsPageIndicator">
+        <attr name="dotDiameter" format="dimension" />
+        <attr name="dotGap" format="dimension" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="pageIndicatorColor" format="color" />
+        <attr name="currentPageIndicatorColor" format="color" />
+    </declare-styleable>
+
+    <!-- For ConversationMessageView -->
+    <declare-styleable name="ConversationMessageView">
+        <attr name="incoming" format="boolean" />
+        <attr name="messageText" format="reference" />
+        <attr name="timestampText" format="reference" />
+        <attr name="iconText" format="reference" />
+        <attr name="iconTextColor" format="reference|color" />
+        <attr name="iconBackgroundColor" format="reference|color" />
+    </declare-styleable>
+
+    <attr name="switchBarTheme" format="reference" />
+    <attr name="switchBarMarginStart" format="dimension" />
+    <attr name="switchBarMarginEnd" format="dimension" />
+    <attr name="switchBarBackgroundColor" format="color" />
+    <attr name="switchBarBackgroundActivatedColor" format="color" />
+    <attr name="switchBarRestrictionIcon" format="reference" />
+
+    <attr name="preferenceBackgroundColor" format="color" />
+
+    <!-- Confirm device credentials screen -->
+    <attr name="confirmDeviceCredentialsSideMargin" format="dimension" />
+    <attr name="confirmDeviceCredentialsTopMargin" format="dimension" />
+
+    <declare-styleable name="WorkPreference">
+        <attr name="forWork" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="VideoPreference">
+        <attr name="animation" format="reference" />
+        <attr name="preview" format="reference" />
+    </declare-styleable>
+
+    <!-- For AspectRatioFrameLayout -->
+    <declare-styleable name="AspectRatioFrameLayout">
+        <attr name="aspectRatio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="ListWithEntrySummaryPreference">
+        <!-- Summaries of entry -->
+        <attr name="entrySummaries" format="reference" />
+    </declare-styleable>
+
+    <!-- For UsageView -->
+    <declare-styleable name="UsageView">
+        <attr name="android:colorAccent" />
+        <attr name="sideLabels" format="reference" />
+        <attr name="bottomLabels" format="reference" />
+        <attr name="textColor" format="color" />
+        <attr name="android:gravity" />
+    </declare-styleable>
+
+    <!-- For DonutView -->
+    <declare-styleable name="DonutView">
+        <attr name="meterBackgroundColor" format="color" />
+        <attr name="meterConsumedColor" format="color" />
+        <attr name="applyColorAccent" format="boolean" />
+        <attr name="showPercentString" format="boolean" />
+        <attr name="thickness" format="dimension" />
+    </declare-styleable>
+
+    <!-- For Face enroll accessibility toggle -->
+    <declare-styleable name="FaceEnrollAccessibilityToggle">
+        <attr name="messageText1" format="reference" />
+    </declare-styleable>
+
+    <!-- For TwoStatesButtonPreference -->
+    <declare-styleable name="TwoStateButtonPreference">
+        <attr name="textOn" format="reference" />
+        <attr name="textOff" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TintDrawable">
+        <attr name="android:tint" />
+        <attr name="android:drawable" />
+    </declare-styleable>
+
+    <attr name="twoStateButtonPreferenceStyle" format="reference" />
+
+    <attr name="fingerprint_layout_theme" format="reference" />
+    <attr name="face_layout_theme" format="reference" />
+    <attr name="ic_menu_moreoverflow" format="reference" />
+    <attr name="side_margin" format="reference|dimension" />
+    <attr name="wifi_signal_color" format="reference" />
+    
+ <declare-styleable name="RestrictedPreference">
+        <!-- The user restriction on which the preference disabled by admin state will be based on. -->
+        <attr name="userRestriction" format="string" />
+        <!-- If true then we can use enabled/disabled by admin strings for summary (android.R.id.summary). -->
+        <attr name="useAdminDisabledSummary" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RestrictedSwitchPreference">
+        <!-- If true, an additional summary will be added in addition to the existing summary and
+        this will be used for enabled/disabled by admin strings leaving android.R.id.summary untouched.
+        As such when this is true, useAdminDisabledSummary will be overwritten to false. -->
+        <attr name="useAdditionalSummary" format="boolean" />
+        <!-- This is used as summary for restricted switch preferences, default value is
+        @string/disabled_by_admin (Disabled by administrator). -->
+        <attr name="restrictedSwitchSummary" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="WifiEncryptionState">
+        <attr name="state_encrypted" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="WifiMeteredState">
+        <attr name="state_metered" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="WifiSavedState">
+        <attr name="state_saved" format="boolean" />
+    </declare-styleable>
+
+    <attr name="wifi_signal" format="reference" />
+    <attr name="wifi_friction" format="reference" />
+
+    <attr name="footerPreferenceStyle" format="reference" />
+
+    <!-- Workaround for b/74248169. These are duplicates of attrs in AndroidX preferences. -->
+    <attr name="preferenceStyle" format="reference" />
+    <attr name="switchPreferenceStyle" format="reference" />
+    
+    <!-- Theme attributes -->
+    <attr name="sucLayoutTheme" format="reference" />
+
+    <declare-styleable name="SucTemplateLayout">
+        <attr name="android:layout" />
+        <attr name="sucContainer" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SucPartnerCustomizationLayout">
+        <attr name="sucLayoutFullscreen" format="boolean" />
+        <!-- When set to false, prevents the layout applying partner resource. This attribute is
+             particularly useful when the layout would like to apply their customized attributes.
+             This attribute will be ignored and use partner resource when inside setup wizard flow.
+             The default value is true. -->
+        <attr name="sucUsePartnerResource" format="boolean" />
+    </declare-styleable>
+
+    <!-- Status bar attributes; only takes effect on M or above -->
+    <declare-styleable name="SucStatusBarMixin">
+        <!-- The color for the status bar. For this to take effect,
+             "android:windowDrawsSystemBarBackgrounds" should be set to true and
+             "android:windowTranslucentStatus" should be set to false. Also,
+             View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN should be set to true and
+             android:statusBarColor should be transparent. -->
+        <attr name="sucStatusBarBackground" format="color|reference" />
+        <attr name="sucLightStatusBar" format="boolean" />
+    </declare-styleable>
+
+    <!-- System navigation bar attributes; only takes effect on O_MR1 or above -->
+    <declare-styleable name="SucSystemNavBarMixin">
+        <!-- The color for the system navigation bar. For this to take effect,
+             "android:windowDrawsSystemBarBackgrounds" should be set to true and
+             "android:windowTranslucentNavigation" should be set to false. -->
+        <attr name="sucSystemNavBarBackgroundColor" format="color" />
+        <attr name="sucLightSystemNavBar" format="boolean" />
+    </declare-styleable>
+
+    <!-- FooterButton attributes -->
+    <declare-styleable name="SucFooterButton">
+        <attr name="android:text" />
+        <attr name="android:theme" />
+        <!-- Next value: 9 -->
+        <attr name="sucButtonType">
+            <enum name="other" value="0" />
+            <enum name="add_another" value="1" />
+            <enum name="cancel" value="2" />
+            <enum name="clear" value="3" />
+            <enum name="done" value="4" />
+            <enum name="next" value="5" />
+            <enum name="opt_in" value="6" />
+            <enum name="skip" value="7" />
+            <enum name="stop" value="8" />
+        </attr>
+    </declare-styleable>
+
+    <!-- Button of footer attributes -->
+    <declare-styleable name="SucFooterBarMixin">
+        <attr name="sucFooterBarButtonAllCaps" format="boolean" />
+        <attr name="sucFooterBarButtonCornerRadius" format="dimension" />
+        <attr name="sucFooterBarButtonFontFamily" format="string|reference" />
+        <attr name="sucFooterBarPaddingTop" format="dimension" />
+        <attr name="sucFooterBarPaddingBottom" format="dimension" />
+        <attr name="sucFooterBarPrimaryFooterBackground" format="color" />
+        <attr name="sucFooterBarPrimaryFooterButton" format="reference" />
+        <attr name="sucFooterBarSecondaryFooterBackground" format="color" />
+        <attr name="sucFooterBarSecondaryFooterButton" format="reference" />
+        <attr name="sucFooterBarButtonHighlightAlpha" format="float" />
+        <attr name="sucFooterBarButtonColorControlHighlight" format="color" />
+        <attr name="sucFooterBarButtonColorControlHighlightRipple" format="color" />
+        <attr name="sucFooterBarPaddingVertical" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SucHeaderMixin">
+        <attr name="sucHeaderText" format="string" localization="suggested" />
+        <attr name="sucHeaderTextColor" format="reference|color" />
+    </declare-styleable>
+ 
+    
+    
+    <!-- Theme attributes -->
+    <attr name="sudLayoutTheme" format="reference" />
+    <attr name="sudMarginSides" format="dimension|reference" />
+    <attr name="sudEditTextBackgroundColor" format="color" />
+    <attr name="sudButtonHighlightAlpha" format="float" />
+
+    <!-- Subset of values in "gravity" in frameworks/base/core/res/res/values/attrs.xml. Only
+         horizontal values are listed here as the header does not support vertical gravity. -->
+    <attr name="sudGlifHeaderGravity">
+        <!-- Push object to the left of its container, not changing its size. -->
+        <flag name="left" value="0x03" />
+        <!-- Push object to the right of its container, not changing its size. -->
+        <flag name="right" value="0x05" />
+        <!-- Place object in the horizontal center of its container, not changing its size. -->
+        <flag name="center_horizontal" value="0x01" />
+        <!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
+        <flag name="fill_horizontal" value="0x07" />
+        <!-- Push object to the beginning of its container, not changing its size. -->
+        <flag name="start" value="0x00800003" />
+        <!-- Push object to the end of its container, not changing its size. -->
+        <flag name="end" value="0x00800005" />
+    </attr>
+    <attr name="sudGlifIconStyle" format="reference" />
+
+    <attr name="sudButtonAllCaps" format="boolean" />
+    <attr name="sudButtonCornerRadius" format="dimension" />
+    <attr name="sudButtonFontFamily" format="string|reference" />
+    <attr name="sudCardBackground" format="color|reference" />
+    <attr name="sudDividerCondition">
+        <enum name="either" value="0" />
+        <enum name="both" value="1" />
+    </attr>
+    <attr name="sudFillContentLayoutStyle" format="reference" />
+    <attr name="sudListItemIconColor" format="color" />
+    <attr name="sudNavBarBackgroundColor" format="color" />
+    <attr name="sudNavBarButtonBackground" format="color|reference" />
+    <attr name="sudNavBarTextColor" format="color" />
+    <attr name="sudNavBarTheme" format="reference" />
+    <attr name="sudIconTint" format="color" />
+    <attr name="sudIconGravity">
+        <!-- Values in the enum has to be the same as in android.view.Gravity -->
+        <enum name="top" value="0x30" />
+        <enum name="center_vertical" value="0x10" />
+        <enum name="bottom" value="0x50" />
+    </attr>
+
+    <!-- Values copied from frameworks/base/core/res/res/values/attrs.xml -->
+    <attr name="sudScrollIndicators">
+        <!-- No scroll indicators are displayed. -->
+        <flag name="none" value="0x00" />
+        <!-- Displays top scroll indicator when view can be scrolled up. -->
+        <flag name="top" value="0x01" />
+        <!-- Displays bottom scroll indicator when vew can be scrolled down. -->
+        <flag name="bottom" value="0x02" />
+        <!-- Displays left scroll indicator when vew can be scrolled left. -->
+        <flag name="left" value="0x04" />
+        <!-- Displays right scroll indicator when vew can be scrolled right. -->
+        <flag name="right" value="0x08" />
+        <!-- Displays right scroll indicator when vew can be scrolled in the
+             start direction. -->
+        <flag name="start" value="0x10" />
+        <!-- Displays right scroll indicator when vew can be scrolled in the
+             end direction. -->
+        <flag name="end" value="0x20" />
+    </attr>
+
+    <!-- Custom view attributes -->
+    <attr name="sudColorPrimary" format="color" />
+    <attr name="sudHeader" format="reference" />
+    <!-- Deprecated. Use sudDividerInsetStart and sudDividerInsetEnd instead -->
+    <attr name="sudDividerInset" format="dimension|reference" />
+    <attr name="sudDividerInsetEnd" format="dimension|reference" />
+    <attr name="sudDividerInsetStart" format="dimension|reference" />
+    <attr name="sudDividerInsetStartNoIcon" format="dimension|reference" />
+    <attr name="sudItemDescriptionStyle" format="reference" />
+    <attr name="sudItemDescriptionTitleStyle" format="reference" />
+
+    <attr name="sudHasStableIds" format="boolean|reference" />
+
+    <declare-styleable name="SudIllustration">
+        <attr name="sudAspectRatio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="SudStickyHeaderListView">
+        <attr name="sudHeader" />
+    </declare-styleable>
+
+    <declare-styleable name="SudHeaderRecyclerView">
+        <attr name="sudHeader" />
+    </declare-styleable>
+
+    <declare-styleable name="SudIllustrationVideoView">
+        <attr name="sudVideo" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SudGlifLayout">
+        <attr name="sudBackgroundPatterned" format="boolean" />
+        <attr name="sudBackgroundBaseColor" format="color" />
+        <attr name="sudColorPrimary" />
+        <attr name="sudStickyHeader" format="reference" />
+        <!-- This attribute is false by default. When set to true, the layout will apply partner
+             customizations to Header, Icon and Description. This attribute will be ignored when
+             GlifLayout.shouldApplyPartnerResource() returns false.  -->
+        <attr name="sudUsePartnerHeavyTheme" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SudIntrinsicSizeFrameLayout">
+        <attr name="android:height" />
+        <attr name="android:width" />
+    </declare-styleable>
+
+    <declare-styleable name="SudFillContentLayout">
+        <attr name="android:maxHeight" />
+        <attr name="android:maxWidth" />
+    </declare-styleable>
+
+    <declare-styleable name="SudSetupWizardLayout">
+        <attr name="sudBackground" format="color|reference" />
+        <attr name="sudBackgroundTile" format="color|reference" />
+        <attr name="sudDecorPaddingTop" format="dimension|reference" />
+        <attr name="sudIllustration" format="color|reference" />
+        <attr name="sudIllustrationAspectRatio" format="float|reference" />
+        <attr name="sudIllustrationHorizontalTile" format="color|reference" />
+        <attr name="sudIllustrationImage" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SudTemplateLayout">
+        <attr name="android:layout" />
+        <attr name="sudContainer" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SudAbstractItem">
+        <attr name="android:id" />
+    </declare-styleable>
+
+    <declare-styleable name="SudItem">
+        <attr name="android:enabled" />
+        <attr name="android:icon" />
+        <attr name="android:layout" />
+        <attr name="android:summary" />
+        <attr name="android:title" />
+        <attr name="android:visible" />
+        <attr name="sudIconTint" />
+        <attr name="sudIconGravity" />
+    </declare-styleable>
+
+    <declare-styleable name="SudDividerItemDecoration">
+        <attr name="android:listDivider" />
+        <attr name="android:dividerHeight" />
+        <attr name="sudDividerCondition" />
+    </declare-styleable>
+
+    <declare-styleable name="SudButtonItem">
+        <attr name="android:buttonStyle" />
+        <attr name="android:enabled" />
+        <attr name="android:text" />
+        <attr name="android:theme" />
+    </declare-styleable>
+
+    <declare-styleable name="SudIconMixin">
+        <attr name="android:icon" />
+        <attr name="sudUpscaleIcon" format="boolean" />
+        <attr name="sudIconTint" />
+    </declare-styleable>
+
+    <declare-styleable name="SudListMixin">
+        <attr name="android:entries" />
+        <attr name="sudDividerInset" />
+        <attr name="sudDividerInsetEnd" />
+        <attr name="sudDividerInsetStart" />
+    </declare-styleable>
+
+    <declare-styleable name="SudRecyclerItemAdapter">
+        <attr name="android:colorBackground" />
+        <attr name="android:selectableItemBackground" />
+        <attr name="selectableItemBackground" />
+    </declare-styleable>
+
+    <declare-styleable name="SudRecyclerMixin">
+        <attr name="android:entries" />
+        <attr name="sudDividerInset" />
+        <attr name="sudDividerInsetEnd" />
+        <attr name="sudDividerInsetStart" />
+        <attr name="sudHasStableIds" />
+    </declare-styleable>
+
+    <declare-styleable name="SudSwitchItem">
+        <attr name="android:checked" />
+    </declare-styleable>
+
+    <declare-styleable name="SudExpandableSwitchItem">
+        <attr name="sudCollapsedSummary" format="string" localization="suggested" />
+        <attr name="sudExpandedSummary" format="string" localization="suggested" />
+    </declare-styleable>
+    
+    
+    <attr name="strokeColor" format="color" />
+    <attr name="rippleColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
+
+    <attr name="shapeAppearance" format="reference" />
+    <attr name="titleItemEndPadding" format="dimension" />
+    <attr name="contentStartPadding" format="dimension" />
+    <attr name="contentEndPadding" format="dimension" />
+    <attr name="endItemStartPadding" format="dimension" />
+    <attr name="endItemEndPadding" format="dimension" />
+    <attr name="bottomDividerStartPadding" format="dimension" />
+    <attr name="bottomDividerEndPadding" format="dimension" />
+    <attr name="actionDividerHeight" format="dimension" />
+    <attr name="rowStyle" format="reference" />
+    <attr name="colorPrimaryVariant" format="color" />
+
+    <attr name="positiveButtonText" format="string" />
+    <attr name="negativeButtonText" format="string" />
+    
+    <declare-styleable name="SettingsBarView">
+         <!-- The color of bar view -->
+         <attr name="barColor" format="color" />
+     </declare-styleable>
+</resources>

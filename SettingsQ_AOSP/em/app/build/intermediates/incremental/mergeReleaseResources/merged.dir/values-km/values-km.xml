@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="6680390511183224469" name="a_negative">"A ដក"</string>
+    <string msgid="160635169929713435" name="a_positive">"A បូក"</string>
+    <string msgid="2064555613093591729" name="ab_negative">"A B ដក"</string>
+    <string msgid="1931300033534642005" name="ab_positive">"A B បូក"</string>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"រកមើល​ទៅ​ដើម"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"រកមើល​ឡើងលើ"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"ជម្រើស​ច្រើន​ទៀត"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"រួចរាល់"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"មើល​ទាំងអស់"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"ជ្រើស​កម្មវិធី​​"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"បិទ"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"បើក"</string>
+    <string msgid="1302280443949172191" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="1324831542140195728" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="8362206064229013510" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="8341180395196749340" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="4792426091847145555" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="7643535737296831317" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="8126296154200614004" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="2378550843553983978" name="abc_menu_space_shortcut_label">"space"</string>
+    <string msgid="9002602288060866689" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="1351762916121158029" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"ស្វែងរក…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"សម្អាត​សំណួរ"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"ស្វែងរក​សំណួរ"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"ស្វែងរក"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"ដាក់​​​ស្នើ​សំណួរ"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"ការស្វែងរក​សំឡេង"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"ចែករំលែក​ជាមួយ"</string>
+    <string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"ចែក​រំលែក​ជា​មួយ <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"បង្រួម"</string>
+    <string msgid="2510867828094325481" name="abminus">"AB-"</string>
+    <string msgid="8061792867513932701" name="abplus">"AB+"</string>
+    <string msgid="4063577069613981029" name="add_emergency_contact">"បញ្ចូលទំនាក់ទំនង"</string>
+    <string msgid="483921612415907139" name="add_medical_info">"បញ្ចូល​ព័ត៌មាន"</string>
+    <string msgid="6449303483151189969" name="address">"អាសយដ្ឋាន"</string>
+    <string msgid="8327537794752630199" name="age">"អាយុ៖ <ns1:g id="NUMERICAL_AGE">%1$d</ns1:g>"</string>
+    <string msgid="2789200777539258165" name="allergies">"អាល់លែហ្សី"</string>
+    <string msgid="5488918780522184147" name="allergies_hint">"ឧទាហរណ៍៖ សណ្តែកដី"</string>
+    <string msgid="1469727296074783670" name="aminus">"A-"</string>
+    <string msgid="4982472245421753463" name="aplus">"A+"</string>
+    <string msgid="1090682794607161063" name="app_label">"ព័ត៌មានសង្គ្រោះបន្ទាន់"</string>
+    <string msgid="4110646487598488955" name="b_negative">"B ដក"</string>
+    <string msgid="8225619238000785345" name="b_positive">"B បូក"</string>
+    <string msgid="6947022772999974608" name="blood_type">"ប្រភេទឈាម"</string>
+    <string msgid="3813367242072886088" name="bminus">"B-"</string>
+    <string msgid="5395850743718234762" name="bplus">"B+"</string>
+    <string msgid="7401575239009060939" name="cancel">"បោះបង់"</string>
+    <string msgid="3648880442502887163" name="clear">"លុប"</string>
+    <string msgid="8899013032870561633" name="clear_all">"លុបទាំងអស់"</string>
+    <string msgid="1548432000373861295" name="clear_all_message">"លុបព័ត៌មាន និងទំនាក់ទំនងទាំងអស់ឬ?"</string>
+    <string msgid="777979232444227891" name="date_of_birth">"ថ្ងៃ​ខែឆ្នាំកំណើត"</string>
+    <string msgid="2813161080307245706" name="dob">"(<ns1:g id="DATE_OF_BIRTH">%1$s</ns1:g>)"</string>
+    <string msgid="5973929805855224805" name="edit_info">"កែព័ត៌មានសង្គ្រោះបន្ទាន់"</string>
+    <string msgid="5462202017417821030" name="emergency_contacts_title">"ទំនាក់ទំនងសង្គ្រោះបន្ទាន់"</string>
+    <string msgid="8751758742506410146" name="emergency_info_footer">"ការបញ្ចូលព័ត៌មានវេជ្ជសាស្ត្រ និងទំនាក់ទំនងសង្គ្រោះបន្ទាន់អាចជួយអ្នកសង្គ្រោះបឋមក្នុងប្រតិបត្តិការសង្គ្រោះបន្ទាន់បាន។\n\nអ្នករាល់គ្នាអាចអានព័ត៌មាននេះពីអេក្រង់ចាក់សោរបស់អ្នក និងហៅទូរសព្ទទៅលេខក្នុងទំនាក់ទំនងរបស់អ្នកដោយចុចឈ្មោះរបស់ពួកគេ ដោយមិនចាំបាច់ដោះសោអេក្រង់ទូរសព្ទរបស់អ្នកនោះទេ។"</string>
+    <string msgid="6511490846952942291" name="fail_add_contact">"មិន​អាច​អាន​ព័ត៌មាន​ទំនាក់ទំនង​បាន​ត្រឹមត្រូវ​ទេ"</string>
+    <string msgid="4128854688897045879" name="fail_display_contact">"មិន​អាច​បង្ហាញ​ទំនាក់ទំនង​នេះ​បានទេ"</string>
+    <string msgid="817205483833876726" name="fail_load_contact_picker">"រក​មិន​ឃើញ​កម្មវិធី​ជ្រើសរើស​ទំនាក់ទំនង​ទេ"</string>
+    <string msgid="2183333409760379720" name="h_h">"H H"</string>
+    <string msgid="3071675674015857183" name="hh">"H/H"</string>
+    <string msgid="3555690011498283592" name="medical_conditions">"កំណត់ហេតុវេជ្ជសាស្ត្រ"</string>
+    <string msgid="6959152183029062882" name="medical_conditions_hint">"ឧទាហរណ៍៖ ជំងឺហឺត"</string>
+    <string msgid="3000192781136934887" name="medical_info_title">"ព័ត៌មានវេជ្ជសាស្រ្ត"</string>
+    <string msgid="644428945685557183" name="medications">"ថ្នាំពេទ្យ"</string>
+    <string msgid="3221620025945593723" name="medications_hint">"ឧទាហរណ៍៖ ថ្នាំអាស្ពីរីន"</string>
+    <string msgid="4286267457738861977" name="name">"ឈ្មោះ"</string>
+    <string msgid="1681689233660683509" name="no">"ទេ"</string>
+    <string msgid="716200382010821001" name="no_info_provided">"គ្មានព័ត៌មានអំពីម្ចាស់ទូរសព្ទនេះទេ"</string>
+    <string msgid="5261178297066132923" name="o_negative">"O ដក"</string>
+    <string msgid="5944181307873488422" name="o_positive">"O បូក"</string>
+    <string msgid="163967937451981024" name="ok">"យល់ព្រម"</string>
+    <string msgid="5227278501191741055" name="ominus">"O-"</string>
+    <string msgid="7759756742377867011" name="oplus">"O+"</string>
+    <string msgid="5953509460007124827" name="organ_donor">"អ្នកបរិច្ចាគសរីរាង្គ"</string>
+    <string msgid="5034188169563878371" name="phone_type_and_phone_number">"<ns1:g id="PHONE_TYPE">%1$s</ns1:g> • <ns1:g id="PHONE_NUMBER">%2$s</ns1:g>"</string>
+    <string msgid="1243949503772376064" name="remove">"យកចេញ"</string>
+    <string msgid="6934983445723096759" name="remove_contact">"យក <ns1:g id="CONTACT_NAME">%1$s</ns1:g> ចេញពីទំនាក់ទំនងសង្គ្រោះបន្ទាន់ឬ?"</string>
+    <string msgid="4576641386490101363" name="remove_contact_icon_text">"យក​ទំនាក់ទំនង​ចេញ"</string>
+    <string msgid="4413507180967999944" name="remove_dob_icon_text">"យកថ្ងៃខែឆ្នាំកំណើតចេញ"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"ស្វែងរក"</string>
+    <string msgid="5559349261345837716" name="settings_suggestion_body">"អនុញ្ញាត​ឱ្យអ្នកសង្គ្រោះ​បឋម​មើលឃើញ​ព័ត៌មាន​របស់អ្នក"</string>
+    <string msgid="2503369576806243476" name="settings_suggestion_title">"បញ្ចូលព័ត៌មានសង្គ្រោះបន្ទាន់"</string>
+    <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="4298341166404791209" name="tab_title_contacts">"ទំនាក់ទំនង"</string>
+    <string msgid="1402033103294855812" name="tab_title_info">"ព័ត៌មាន"</string>
+    <string msgid="2723698054265296934" name="tap_pencil">"ប្រសិនបើទូរសព្ទនេះជារបស់អ្នក សូមប៉ះរូបតំណាងខ្មៅដៃដើម្បីបញ្ចូលព័ត៌មានដែលនឹងត្រូវបង្ហាញនៅទីនេះក្នុងករណីសង្គ្រោះបន្ទាន់"</string>
+    <string msgid="4212576729941786121" name="unknown_address">"មិនស្គាល់"</string>
+    <string msgid="4383115953418061237" name="unknown_allergies">"មិនស្គាល់"</string>
+    <string msgid="6337228278125085668" name="unknown_blood_type">"មិនស្គាល់"</string>
+    <string msgid="7416355536916066758" name="unknown_date_of_birth">"មិនស្គាល់"</string>
+    <string msgid="8051364895172053770" name="unknown_medical_conditions">"មិនស្គាល់"</string>
+    <string msgid="2764171064510423734" name="unknown_medications">"មិនស្គាល់"</string>
+    <string msgid="2834802479170495056" name="unknown_name">"មិនស្គាល់"</string>
+    <string msgid="2780515342875494225" name="unknown_organ_donor">"មិនស្គាល់"</string>
+    <string msgid="2739785560734553126" name="user_image_choose_photo">"ជ្រើស​រូបថត​ពី​សាលរូបថត"</string>
+    <string msgid="8941966433899876760" name="user_image_photo_selector">"ជ្រើសរើស​​រូបថត"</string>
+    <string msgid="21997578349584645" name="user_image_take_photo">"ថតរូប"</string>
+    <string msgid="7956055372443961161" name="user_nickname">"ឈ្មោះ​ហៅក្រៅ"</string>
+    <string msgid="5829765567799916128" name="yes">"បាទ/ចាស"</string>
+</resources>

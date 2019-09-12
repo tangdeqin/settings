@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="6680390511183224469" name="a_negative">"A, ନେଗେଟିଭ୍"</string>
+    <string msgid="160635169929713435" name="a_positive">"A, ପଜିଟିଭ୍"</string>
+    <string msgid="2064555613093591729" name="ab_negative">"A B ନେଗେଟିଭ୍"</string>
+    <string msgid="1931300033534642005" name="ab_positive">"A B ପଜିଟିଭ୍"</string>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"ହୋମ୍ ପେଜ୍‍କୁ ନେଭିଗେଟ୍ କରନ୍ତୁ"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"ଉପରକୁ ନେଭିଗେଟ୍ କରନ୍ତୁ"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"ଅଧିକ ବିକଳ୍ପ"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"ହୋଇଗଲା"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"ସବୁ ଦେଖନ୍ତୁ"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"ଗୋଟିଏ ଆପ୍‍ ବାଛନ୍ତୁ"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"ଅଫ୍"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"ଅନ୍"</string>
+    <string msgid="1302280443949172191" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="1324831542140195728" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="8362206064229013510" name="abc_menu_delete_shortcut_label">"ଡିଲିଟ୍‍"</string>
+    <string msgid="8341180395196749340" name="abc_menu_enter_shortcut_label">"ଏଣ୍ଟର୍"</string>
+    <string msgid="4792426091847145555" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="7643535737296831317" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="8126296154200614004" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="2378550843553983978" name="abc_menu_space_shortcut_label">"ସ୍ପେସ୍‍"</string>
+    <string msgid="9002602288060866689" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="1351762916121158029" name="abc_prepend_shortcut_label">"ମେନୁ"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"ସର୍ଚ୍ଚ…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"କ୍ୱେରୀ ଖାଲି କରନ୍ତୁ"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"ସର୍ଚ୍ଚ କ୍ୱେରୀ"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"ସର୍ଚ୍ଚ କରନ୍ତୁ"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"କ୍ୱେରୀ ଦାଖଲ କରନ୍ତୁ"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"ଭଏସ୍‌ ସର୍ଚ୍ଚ"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"ଏହାଙ୍କ ସହ ଶେୟାର୍‌ କରନ୍ତୁ"</string>
+    <string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> ସହ ଶେୟାର୍‍ କରନ୍ତୁ"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"ଛୋଟ କରନ୍ତୁ"</string>
+    <string msgid="2510867828094325481" name="abminus">"A2:B7"</string>
+    <string msgid="8061792867513932701" name="abplus">"A2:B7"</string>
+    <string msgid="4063577069613981029" name="add_emergency_contact">"ଯୋଗାଯୋଗକୁ ଯୋଡ଼ନ୍ତୁ"</string>
+    <string msgid="483921612415907139" name="add_medical_info">"ସୂଚନା ଯୋଗ କରନ୍ତୁ"</string>
+    <string msgid="6449303483151189969" name="address">"ଠିକଣା"</string>
+    <string msgid="8327537794752630199" name="age">"ବୟସ: <ns1:g id="NUMERICAL_AGE">%1$d</ns1:g>"</string>
+    <string msgid="2789200777539258165" name="allergies">"ଆଲର୍ଜୀ"</string>
+    <string msgid="5488918780522184147" name="allergies_hint">"ଉଦାହରଣସ୍ଵରୂପ, ଚିନାବାଦାମ"</string>
+    <string msgid="1469727296074783670" name="aminus">"A-"</string>
+    <string msgid="4982472245421753463" name="aplus">"A+"</string>
+    <string msgid="1090682794607161063" name="app_label">"ଆପାତକାଳୀନ ସୂଚନା"</string>
+    <string msgid="4110646487598488955" name="b_negative">"B ନେଗେଟିଭ୍"</string>
+    <string msgid="8225619238000785345" name="b_positive">"B ପଜିଟିଭ୍"</string>
+    <string msgid="6947022772999974608" name="blood_type">"ରକ୍ତର ପ୍ରକାର"</string>
+    <string msgid="3813367242072886088" name="bminus">"B-"</string>
+    <string msgid="5395850743718234762" name="bplus">"B+"</string>
+    <string msgid="7401575239009060939" name="cancel">"କ୍ୟାନ୍ସଲ୍‍"</string>
+    <string msgid="3648880442502887163" name="clear">"ଖାଲି କରନ୍ତୁ"</string>
+    <string msgid="8899013032870561633" name="clear_all">"ସମସ୍ତ ଖାଲି କରନ୍ତୁ"</string>
+    <string msgid="1548432000373861295" name="clear_all_message">"ସମସ୍ତ ସୂଚନା ଓ ଯୋଗାଯୋଗଗୁଡ଼ିକୁ ଖାଲି କରନ୍ତୁ?"</string>
+    <string msgid="777979232444227891" name="date_of_birth">"ଜନ୍ମ ତାରିଖ:"</string>
+    <string msgid="2813161080307245706" name="dob">"(<ns1:g id="DATE_OF_BIRTH">%1$s</ns1:g>)"</string>
+    <string msgid="5973929805855224805" name="edit_info">"ଆପାତକାଳୀନ ସୂଚନାକୁ ଏଡିଟ୍ କରନ୍ତୁ"</string>
+    <string msgid="5462202017417821030" name="emergency_contacts_title">"ଆପାତକାଳୀନ ଯୋଗାଯୋଗ"</string>
+    <string msgid="8751758742506410146" name="emergency_info_footer">"ଡାକ୍ତରୀ ସୂଚନା ଓ ଆପାତକାଳୀନ ଯୋଗାଯୋଗକୁ ସଂଯୁକ୍ତ କରି ଏକ ଆପାତକାଳୀନ ସମୟରେ ପ୍ରଥମ ଉତ୍ତରଦାତା ସାହାଯ୍ୟ ପାଇପାରିବେ।\n\nଆପଣଙ୍କ ସ୍କ୍ରୀନ୍ ଲକ୍ ହୋଇଥିଲେ ମଧ୍ୟ ଯେକେହିହେଲେ ଏହି ସୂଚନାକୁ ପଢ଼ିପାରିବେ ଏବଂ ଫୋନକୁ ଅନଲକ୍ ନକରି ଆପଣଙ୍କ ଯୋଗାଯୋଗରେ ଥିବା ନାମଗୁଡ଼ିକ ଉପରେ ଟାପ୍‌କରି ଡାଏଲ୍ କରିପାରିବେ।"</string>
+    <string msgid="6511490846952942291" name="fail_add_contact">"ଯୋଗାଯୋଗ ସୂଚନାକୁ ଠିକ୍ ଭାବେ ପଢ଼ି ହେଉନାହିଁ"</string>
+    <string msgid="4128854688897045879" name="fail_display_contact">"ଯୋଗାଯୋଗକୁ ଦେଖାଇହେବନାହିଁ"</string>
+    <string msgid="817205483833876726" name="fail_load_contact_picker">"ଯୋଗାଯୋଗ ପିକର୍ ମିଳିଲାନାହିଁ"</string>
+    <string msgid="2183333409760379720" name="h_h">"H H"</string>
+    <string msgid="3071675674015857183" name="hh">"H/H"</string>
+    <string msgid="3555690011498283592" name="medical_conditions">"ଡାକ୍ତରୀ ନୋଟ୍"</string>
+    <string msgid="6959152183029062882" name="medical_conditions_hint">"ଉଦାହରଣସ୍ଵରୂପ, ଆଜ୍‌ମା"</string>
+    <string msgid="3000192781136934887" name="medical_info_title">"ଡାକ୍ତରୀ ସୂଚନା"</string>
+    <string msgid="644428945685557183" name="medications">"ଚିକିତ୍ସା"</string>
+    <string msgid="3221620025945593723" name="medications_hint">"ଉଦାହରଣସ୍ଵରୂପ, ଆସ୍ପିରିନ୍"</string>
+    <string msgid="4286267457738861977" name="name">"ନାମ"</string>
+    <string msgid="1681689233660683509" name="no">"ନା"</string>
+    <string msgid="716200382010821001" name="no_info_provided">"ଫୋନ୍ ମାଲିକଙ୍କର କିଛି ସୂଚନା ନାହିଁ"</string>
+    <string msgid="5261178297066132923" name="o_negative">"O ନେଗେଟିଭ୍"</string>
+    <string msgid="5944181307873488422" name="o_positive">"O ପଜିଟିଭ୍"</string>
+    <string msgid="163967937451981024" name="ok">"ଠିକ୍ ଅଛି"</string>
+    <string msgid="5227278501191741055" name="ominus">"O-"</string>
+    <string msgid="7759756742377867011" name="oplus">"O+"</string>
+    <string msgid="5953509460007124827" name="organ_donor">"ଅଙ୍ଗ ଦାତା"</string>
+    <string msgid="5034188169563878371" name="phone_type_and_phone_number">"<ns1:g id="PHONE_TYPE">%1$s</ns1:g> • <ns1:g id="PHONE_NUMBER">%2$s</ns1:g>"</string>
+    <string msgid="1243949503772376064" name="remove">"କାଢ଼ିଦିଅନ୍ତୁ"</string>
+    <string msgid="6934983445723096759" name="remove_contact">"<ns1:g id="CONTACT_NAME">%1$s</ns1:g>କୁ ଆପାତାକାଳୀନ ଯୋଗାଯୋଗରୁ କାଢ଼ିଦିଅନ୍ତୁ?"</string>
+    <string msgid="4576641386490101363" name="remove_contact_icon_text">"ଯୋଗାଯୋଗକୁ କାଢ଼ିଦିଅନ୍ତୁ"</string>
+    <string msgid="4413507180967999944" name="remove_dob_icon_text">"ଜନ୍ମ ତାରିଖକୁ କାଢ଼ିଦିଅନ୍ତୁ"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"ସର୍ଚ୍ଚ କରନ୍ତୁ"</string>
+    <string msgid="5559349261345837716" name="settings_suggestion_body">"ପ୍ରଥମ ଉତ୍ତରଦାତାଙ୍କୁ ଆପଣଙ୍କ ସୂଚନାକୁ ଦେଖିବାକୁ ଦିଅନ୍ତୁ"</string>
+    <string msgid="2503369576806243476" name="settings_suggestion_title">"ଆପାତକାଳୀନ ସୂଚନା ଯୋଡ଼ନ୍ତୁ"</string>
+    <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="4298341166404791209" name="tab_title_contacts">"ଯୋଗାଯୋଗ"</string>
+    <string msgid="1402033103294855812" name="tab_title_info">"ସୂଚନା"</string>
+    <string msgid="2723698054265296934" name="tap_pencil">"ଯଦି ଏହା ଆପଣଙ୍କର ଫୋନ୍, ତେବେ ସୂଚନାକୁ ଯୋଡ଼ିବା ପାଇଁ ପେନସିଲ୍ ଆଇକନ୍ ଉପରେ ଟାପ୍ କରନ୍ତୁ, ଯାହା ଆପାତକାଳୀନ ସମୟରେ ଏଠାରେ ଦେଖାଦେବ"</string>
+    <string msgid="4212576729941786121" name="unknown_address">"ଅଜଣା"</string>
+    <string msgid="4383115953418061237" name="unknown_allergies">"ଅଜଣା"</string>
+    <string msgid="6337228278125085668" name="unknown_blood_type">"ଅଜଣା"</string>
+    <string msgid="7416355536916066758" name="unknown_date_of_birth">"ଅଜଣା"</string>
+    <string msgid="8051364895172053770" name="unknown_medical_conditions">"ଅଜଣା"</string>
+    <string msgid="2764171064510423734" name="unknown_medications">"ଅଜଣା"</string>
+    <string msgid="2834802479170495056" name="unknown_name">"ଅଜଣା"</string>
+    <string msgid="2780515342875494225" name="unknown_organ_donor">"ଅଜଣା"</string>
+    <string msgid="2739785560734553126" name="user_image_choose_photo">"ଗ୍ୟାଲେରୀରୁ ଫଟୋ ବାଛନ୍ତୁ"</string>
+    <string msgid="8941966433899876760" name="user_image_photo_selector">"ଫଟୋ ବାଛନ୍ତୁ"</string>
+    <string msgid="21997578349584645" name="user_image_take_photo">"ଫଟୋ ଉଠାନ୍ତୁ"</string>
+    <string msgid="7956055372443961161" name="user_nickname">"ଡାକନାମ"</string>
+    <string msgid="5829765567799916128" name="yes">"ହଁ"</string>
+</resources>

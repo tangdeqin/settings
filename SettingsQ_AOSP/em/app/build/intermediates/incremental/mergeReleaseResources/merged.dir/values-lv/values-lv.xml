@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="6680390511183224469" name="a_negative">"A, rēzus negatīvs"</string>
+    <string msgid="160635169929713435" name="a_positive">"A, rēzus pozitīvs"</string>
+    <string msgid="2064555613093591729" name="ab_negative">"AB, rēzus negatīvs"</string>
+    <string msgid="1931300033534642005" name="ab_positive">"AB, rēzus pozitīvs"</string>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Pārvietoties uz sākuma ekrānu"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Pārvietoties augšup"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Vairāk opciju"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Gatavs"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Skatīt visu"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Izvēlieties lietotni"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"IZSLĒGTS"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"IESLĒGTS"</string>
+    <string msgid="1302280443949172191" name="abc_menu_alt_shortcut_label">"Alternēšanas taustiņš +"</string>
+    <string msgid="1324831542140195728" name="abc_menu_ctrl_shortcut_label">"Vadīšanas taustiņš +"</string>
+    <string msgid="8362206064229013510" name="abc_menu_delete_shortcut_label">"dzēšanas taustiņš"</string>
+    <string msgid="8341180395196749340" name="abc_menu_enter_shortcut_label">"ievadīšanas taustiņš"</string>
+    <string msgid="4792426091847145555" name="abc_menu_function_shortcut_label">"Funkcijas taustiņš +"</string>
+    <string msgid="7643535737296831317" name="abc_menu_meta_shortcut_label">"Meta taustiņš +"</string>
+    <string msgid="8126296154200614004" name="abc_menu_shift_shortcut_label">"Pārslēgšanas taustiņš +"</string>
+    <string msgid="2378550843553983978" name="abc_menu_space_shortcut_label">"atstarpes taustiņš"</string>
+    <string msgid="9002602288060866689" name="abc_menu_sym_shortcut_label">"Simbolu taustiņš +"</string>
+    <string msgid="1351762916121158029" name="abc_prepend_shortcut_label">"Poga Izvēlne +"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Meklējiet…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Notīrīt vaicājumu"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Meklēšanas vaicājums"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Meklēt"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Iesniegt vaicājumu"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Meklēšana ar balsi"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Kopīgot ar:"</string>
+    <string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"Kopīgot ar lietojumprogrammu <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Sakļaut"</string>
+    <string msgid="2510867828094325481" name="abminus">"AB-"</string>
+    <string msgid="8061792867513932701" name="abplus">"AB+"</string>
+    <string msgid="4063577069613981029" name="add_emergency_contact">"Pievienot kontaktpersonu"</string>
+    <string msgid="483921612415907139" name="add_medical_info">"Pievienot informāciju"</string>
+    <string msgid="6449303483151189969" name="address">"Adrese"</string>
+    <string msgid="8327537794752630199" name="age">"Vecums: <ns1:g id="NUMERICAL_AGE">%1$d</ns1:g>"</string>
+    <string msgid="2789200777539258165" name="allergies">"Alerģijas"</string>
+    <string msgid="5488918780522184147" name="allergies_hint">"Piemēram, zemesrieksti"</string>
+    <string msgid="1469727296074783670" name="aminus">"A-"</string>
+    <string msgid="4982472245421753463" name="aplus">"A+"</string>
+    <string msgid="1090682794607161063" name="app_label">"Ārkārtas informācija"</string>
+    <string msgid="4110646487598488955" name="b_negative">"B, rēzus negatīvs"</string>
+    <string msgid="8225619238000785345" name="b_positive">"B, rēzus pozitīvs"</string>
+    <string msgid="6947022772999974608" name="blood_type">"Asins grupa"</string>
+    <string msgid="3813367242072886088" name="bminus">"B-"</string>
+    <string msgid="5395850743718234762" name="bplus">"B+"</string>
+    <string msgid="7401575239009060939" name="cancel">"Atcelt"</string>
+    <string msgid="3648880442502887163" name="clear">"Notīrīt"</string>
+    <string msgid="8899013032870561633" name="clear_all">"Notīrīt visu"</string>
+    <string msgid="1548432000373861295" name="clear_all_message">"Vai notīrīt visu informāciju un kontaktpersonas?"</string>
+    <string msgid="777979232444227891" name="date_of_birth">"Dzimšanas datums"</string>
+    <string msgid="2813161080307245706" name="dob">"(<ns1:g id="DATE_OF_BIRTH">%1$s</ns1:g>)"</string>
+    <string msgid="5973929805855224805" name="edit_info">"Rediģēt ārkārtas informāciju"</string>
+    <string msgid="5462202017417821030" name="emergency_contacts_title">"Kontaktpersonas ārkārtas situācijām"</string>
+    <string msgid="8751758742506410146" name="emergency_info_footer">"Medicīniskās informācijas un ārkārtas situāciju kontaktpersonu pievienošana ārkārtas gadījumā var sniegt noderīgu informāciju glābējiem.\n\nIkviens var izlasīt šo informāciju jūsu bloķēšanas ekrānā un piezvanīt attiecīgajām kontaktpersonām, pieskaroties to vārdiem, taču neatbloķējot jūsu tālruni."</string>
+    <string msgid="6511490846952942291" name="fail_add_contact">"Nevar pareizi nolasīt kontaktinformāciju."</string>
+    <string msgid="4128854688897045879" name="fail_display_contact">"Nevar parādīt kontaktpersonu."</string>
+    <string msgid="817205483833876726" name="fail_load_contact_picker">"Nevarēja atrast kontaktpersonu atlasītāju."</string>
+    <string msgid="2183333409760379720" name="h_h">"HH"</string>
+    <string msgid="3071675674015857183" name="hh">"H/H"</string>
+    <string msgid="3555690011498283592" name="medical_conditions">"Slimības vēsture"</string>
+    <string msgid="6959152183029062882" name="medical_conditions_hint">"Piemēram, astma"</string>
+    <string msgid="3000192781136934887" name="medical_info_title">"Medicīniskā informācija"</string>
+    <string msgid="644428945685557183" name="medications">"Medikamenti"</string>
+    <string msgid="3221620025945593723" name="medications_hint">"Piemēram, aspirīns"</string>
+    <string msgid="4286267457738861977" name="name">"Vārds, uzvārds"</string>
+    <string msgid="1681689233660683509" name="no">"Nē"</string>
+    <string msgid="716200382010821001" name="no_info_provided">"Nav informācijas par tālruņa īpašnieku."</string>
+    <string msgid="5261178297066132923" name="o_negative">"O, rēzus negatīvs"</string>
+    <string msgid="5944181307873488422" name="o_positive">"O, rēzus pozitīvs"</string>
+    <string msgid="163967937451981024" name="ok">"Labi"</string>
+    <string msgid="5227278501191741055" name="ominus">"O-"</string>
+    <string msgid="7759756742377867011" name="oplus">"O+"</string>
+    <string msgid="5953509460007124827" name="organ_donor">"Orgānu donors"</string>
+    <string msgid="5034188169563878371" name="phone_type_and_phone_number">"<ns1:g id="PHONE_TYPE">%1$s</ns1:g> • <ns1:g id="PHONE_NUMBER">%2$s</ns1:g>"</string>
+    <string msgid="1243949503772376064" name="remove">"Noņemt"</string>
+    <string msgid="6934983445723096759" name="remove_contact">"Vai noņemt kontaktpersonu <ns1:g id="CONTACT_NAME">%1$s</ns1:g> no ārkārtas situāciju kontaktpersonām?"</string>
+    <string msgid="4576641386490101363" name="remove_contact_icon_text">"Noņemt kontaktpersonu"</string>
+    <string msgid="4413507180967999944" name="remove_dob_icon_text">"Noņemt dzimšanas datumu"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Meklēt"</string>
+    <string msgid="5559349261345837716" name="settings_suggestion_body">"Ļaujiet glābējiem skatīt jūsu informāciju"</string>
+    <string msgid="2503369576806243476" name="settings_suggestion_title">"Ārkārtas informācijas pievienošana"</string>
+    <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="4298341166404791209" name="tab_title_contacts">"Kontaktpersonas"</string>
+    <string msgid="1402033103294855812" name="tab_title_info">"Informācija"</string>
+    <string msgid="2723698054265296934" name="tap_pencil">"Ja šis ir jūsu tālrunis, pieskarieties zīmuļa ikonai, lai pievienotu informāciju, kas tiks parādīta šeit ārkārtas gadījumā."</string>
+    <string msgid="4212576729941786121" name="unknown_address">"Nezināma"</string>
+    <string msgid="4383115953418061237" name="unknown_allergies">"Nezināmas"</string>
+    <string msgid="6337228278125085668" name="unknown_blood_type">"Nezināma"</string>
+    <string msgid="7416355536916066758" name="unknown_date_of_birth">"Nezināms"</string>
+    <string msgid="8051364895172053770" name="unknown_medical_conditions">"Nezināma"</string>
+    <string msgid="2764171064510423734" name="unknown_medications">"Nezināmi"</string>
+    <string msgid="2834802479170495056" name="unknown_name">"Nezināms"</string>
+    <string msgid="2780515342875494225" name="unknown_organ_donor">"Nezināms"</string>
+    <string msgid="2739785560734553126" name="user_image_choose_photo">"Izvēlēties fotoattēlu no galerijas"</string>
+    <string msgid="8941966433899876760" name="user_image_photo_selector">"Atlasīt fotoattēlu"</string>
+    <string msgid="21997578349584645" name="user_image_take_photo">"Uzņemt fotoattēlu"</string>
+    <string msgid="7956055372443961161" name="user_nickname">"Segvārds"</string>
+    <string msgid="5829765567799916128" name="yes">"Jā"</string>
+</resources>

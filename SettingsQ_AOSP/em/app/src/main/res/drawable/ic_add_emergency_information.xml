@@ -1,0 +1,10 @@
+<!-- Copyright (C) 2019 Tcl Corporation Limited -->
+<vector android:height="24dp" android:viewportHeight="28.0"
+    android:viewportWidth="28.0" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#BD322D" android:fillType="nonZero"
+        android:pathData="M14,0L14,0A14,14 0,0 1,28 14L28,14A14,14 0,0 1,14 28L14,28A14,14 0,0 1,0 14L0,14A14,14 0,0 1,14 0z"
+        android:strokeColor="#00000000" android:strokeWidth="1"/>
+    <path android:fillColor="#FFFFFF" android:fillType="nonZero"
+        android:pathData="M14.833,14.833L18.167,14.833L18.167,13.167L14.833,13.167L14.833,9.833L13.167,9.833L13.167,13.167L9.833,13.167L9.833,14.833L13.167,14.833L13.167,18.167L14.833,18.167L14.833,14.833ZM19.833,6.5C20.75,6.5 21.5,7.25 21.5,8.167L21.5,19.833C21.5,20.75 20.75,21.5 19.833,21.5L8.167,21.5C7.25,21.5 6.5,20.75 6.5,19.833L6.5,8.167C6.5,7.25 7.25,6.5 8.167,6.5L19.833,6.5Z"
+        android:strokeColor="#00000000" android:strokeWidth="1"/>
+</vector>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!--Begin modified by runfang.chen for Task: 7962899  on 2019/7/8-->
+    <style name="AppTheme" parent="@android:style/Theme.DeviceDefault.Settings">
+        <item name="*android:colorBackground">@color/custom_settings_background_color</item>
+        <item name="*android:actionBarTheme">@*android:style/ThemeOverlay.Material.ActionBar</item>
+        <!--ToolBar background-->
+        <item name="*android:colorPrimary">@color/custom_settings_background_color</item>
+        <!--Status bar color-->
+        <item name="*android:colorPrimaryDark">@color/custom_settings_colorPrimaryDark</item>
+        <item name="*android:colorAccent">@color/custom_settings_accent_color</item>
+        <item name="preferenceTheme">@style/PreferenceTheme</item>
+        <item name="android:actionBarStyle">@style/Theme.ActionBar</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back_settings</item>
+        <!--removes actionbar shadows-->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Base emergency theme. -->
+    <style name="AppThemeEmergency" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:preferenceCategoryStyle">@style/AppTheme.PreferenceCategoryStyle</item>
+        <item name="colorPrimaryDark">@color/emergency_primary_dark</item>
+        <item name="colorPrimary">@color/emergency_primary</item>
+        <item name="textColorActionBar">@color/tab_text_color</item>
+        <item name="tabIndicatorColor">@color/emergency_accent</item>
+        <item name="preferenceTheme">@style/PreferenceTheme</item>
+    </style>
+    <!--End modified by runfang.chen for Task: 7962899  on 2019/7/8-->
+
+    <!-- ActionBar -->
+    <style name="ActionBarThemeOverlay" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorAccent">@color/accent_color_dark</item>
+        <item name="colorControlNormal">?attr/textColorActionBar</item>
+    </style>
+
+    <!-- Tabs -->
+    <style name="AppTheme.TabLayout" parent="Widget.Design.TabLayout">
+	
+    </style>
+
+    <style name="AppTheme.TabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">?attr/textColorActionBar</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Preferences -->
+    <style name="AppTheme.PreferenceCategoryStyle" parent="Preference.Category">
+        <item name="android:layout">@layout/custom_preference_category_layout</item>
+    </style>
+
+
+    <!-- Fragment style -->
+    <style name="PreferenceFragmentStyle.SettingsBase" parent="@*android:style/PreferenceFragment.Material">
+        <item name="allowDividerAfterLastItem">false</item>
+    </style>
+    
+        <style name="Preference.Category.SettingsBase" parent="@style/Preference.Category.Material">
+        <item name="allowDividerAbove">false</item>
+        <item name="allowDividerBelow">false</item>
+        <item name="android:layout">@layout/preference_category_material_settings</item>
+    </style>
+    
+    <style name="Preference.Screen.SettingsBase" parent="@style/Preference.PreferenceScreen.Material">
+        <item name="allowDividerAbove">false</item>
+        <item name="allowDividerBelow">true</item>
+    </style>
+    <style name="Preference.SettingsBase" parent="@style/Preference.Material">
+        <item name="allowDividerAbove">false</item>
+        <item name="allowDividerBelow">false</item>
+        <item name="singleLineTitle">false</item>
+        <item name="android:layout">@layout/preference_material_settings</item>
+    </style>
+    
+    <style name="Preference.EditTextPreference.SettingsBase"
+           parent="@style/Preference.DialogPreference.EditTextPreference.Material">
+        <item name="allowDividerAbove">false</item>
+        <item name="allowDividerBelow">false</item>
+        <item name="singleLineTitle">false</item>
+    </style>
+    
+    <style name="PreferenceTheme" parent="@style/PreferenceThemeOverlay.v14.Material">
+        <item name="android:scrollbars">vertical</item>
+        <item name="preferenceFragmentStyle">@style/PreferenceFragmentStyle.SettingsBase</item>
+        <item name="preferenceCategoryStyle">@style/Preference.Category.SettingsBase</item>
+        <item name="preferenceScreenStyle">@style/Preference.Screen.SettingsBase</item>
+        <item name="preferenceStyle">@style/Preference.SettingsBase</item>
+        <item name="editTextPreferenceStyle">@style/Preference.EditTextPreference.SettingsBase</item>
+    </style>
+    <!--End modified by zhixiong.liu for Task: 7962899  on 2019/6/27-->
+
+    <style name="FooterPreference" parent="PreferenceTheme">
+        <item name="android:layout">@layout/preference_footer</item>
+        <item name="allowDividerAbove">true</item>
+    </style>
+
+    <style name="NameAutoCompletePreference" parent="PreferenceTheme">
+        <item name="android:positiveButtonText">@android:string/ok</item>
+        <item name="android:negativeButtonText">@android:string/cancel</item>
+    </style>
+
+    <style name="PreferenceCategory" parent="@style/Preference.Category.Material">
+        <item name="android:layout">@layout/preference_category_material_settings</item>
+    </style>
+<style name="Base.CardView" parent="android:Widget">
+        <item name="cardUseCompatPadding">false</item>
+        <item name="cardPreventCornerOverlap">true</item>
+     </style>
+ 
+   <!-- On older platforms we do not explicitly set a background color and let CardView compute          one based on the theme. -->
+     <style name="CardView" parent="Base.CardView"></style>
+    
+    <style name="Theme.ActionBar" parent="@android:style/Widget.Material.ActionBar.Solid">
+        <item name="android:contentInsetStart">@dimen/actionbar_contentInsetStart</item>
+        <item name="android:titleTextStyle">@style/MyTitleTextStyle</item>
+        <item name="android:actionBarSize">@dimen/actionbar_size</item>
+        <item name="android:background">@color/custom_settings_background_color</item>
+    </style>
+    <style name="MyTitleTextStyle"
+        parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <!--End modified by zhixiong.liu for Task: 7962899  on 2019/6/27-->
+
+
+    <!--Begin added by runfang.chen for Task: 7962899  on 2019/7/8-->
+    <style name="footerPreferenceStyle" parent="@style/Preference.SwitchPreference.Material">
+        <!--Modified by miaoliu for XR5237251 on 2017/9/15-->
+        <item name="allowDividerAbove">true</item>
+        <item name="allowDividerBelow">true</item>
+        <!--Deleted by miaoliu for XR5237251 on 2017/9/15-->
+        <!--<item name="iconSpaceReserved">true</item>-->
+        <item name="singleLineTitle">false</item>
+        <!-- Added by miaoliu for new GD on 2018/1/4 -->
+        <item name="android:layout">@layout/preference_footer</item>
+    </style>
+    <!--ebd added by runfang.chen for Task: 7962899  on 2019/7/8-->
+    
+</resources>

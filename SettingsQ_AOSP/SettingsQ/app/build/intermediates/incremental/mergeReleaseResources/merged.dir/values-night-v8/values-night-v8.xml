@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="contextual_card_background">@*android:color/material_grey_900</color>
+    <color name="dialog_background">@*android:color/material_grey_800</color>
+    <color name="homepage_accessibility_background">#783BE5</color>
+    <color name="homepage_card_dismissal_background">@*android:color/material_grey_900</color>
+    <color name="homepage_support_background">#3F5FBD</color>
+    <color name="notification_importance_button_selected">#AECBFA</color>
+    <color name="notification_importance_button_unselected">#5F6368</color>
+    <color name="notification_importance_selection_bg">@*android:color/material_grey_800</color>
+    <color name="search_bar_background">@*android:color/material_grey_800</color>
+    <color name="switchbar_switch_thumb_tint">@android:color/black</color>
+    <color name="switchbar_switch_track_tint">#82000000</color>
+    <style name="SudThemeGlif.DayNight" parent="SudThemeGlif"/>
+    <style name="SudThemeGlifV2.DayNight" parent="SudThemeGlifV2"/>
+    <style name="SudThemeGlifV3.DayNight" parent="SudThemeGlifV3"/>
+    <style name="SudThemeMaterial.DayNight" parent="SudThemeMaterial"/>
+    <style name="Theme.AlertDialog.Base" parent="@style/Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="colorAccent">@*android:color/accent_device_default_dark</item>
+        <item name="android:colorBackground">@color/dialog_background</item>
+    </style>
+    <style name="Theme.AppCompat.DayNight" parent="Theme.AppCompat"/>
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="Theme.AppCompat"/>
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="Theme.AppCompat.Dialog"/>
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="Theme.AppCompat.Dialog.Alert"/>
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="Theme.AppCompat.Dialog.MinWidth"/>
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="Theme.AppCompat.DialogWhenLarge"/>
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="Theme.AppCompat.NoActionBar"/>
+    <style name="Theme.Settings.Home" parent="Theme.Settings.HomeBase">
+        <item name="colorPrimary">@*android:color/primary_device_default_settings</item>
+        <item name="colorPrimaryDark">@*android:color/primary_dark_device_default_settings</item>
+        <item name="android:colorBackground">?android:attr/colorPrimaryDark</item>
+    </style>
+    <style name="Theme.SubSettings" parent="Theme.SubSettings.Base"/>
+    <style name="ThemeOverlay.Settings.SearchBar" parent="Theme.Settings">
+        <item name="android:colorBackground">?android:attr/colorPrimaryDark</item>
+        <item name="cardBackgroundColor">?android:attr/colorPrimary</item>
+        <item name="android:colorControlNormal">?android:attr/colorAccent</item>
+    </style>
+    <style name="ThemeOverlay.SwitchBar.Settings" parent="ThemeOverlay.SwitchBar.Settings.Base">
+        <item name="android:textColorPrimaryInverse">@android:color/black</item>
+    </style>
+    <style name="Widget.ActionBar.Base" parent="@android:style/Widget.DeviceDefault.ActionBar.Solid">
+  <item name="android:background">?android:attr/colorPrimaryDark</item>
+</style>
+</resources>

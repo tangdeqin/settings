@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/29.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="eeec52c8f5da246e6affb17c390f1db62abf9069">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/29/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/20.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="7721c3122111e9338979dfa74005fe88dc468ff2">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/20/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/53.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="23e7a2ac4d987e452a4b249750d2a869f426b8cd">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/53/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/41.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="0d83387a8318cb4a364beee72a7bb4f751a69285">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/41/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/12.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="0f9684a29f0723e8acdd91d949a44372c10609b9">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/12/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/23.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="8a155584d9598ef5f41acec945f6ea8cf348c996">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/23/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/21.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="91fed82f98daea740a8d85d454994f2b8d3f46c9">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/21/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/28.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="213ddc2814f37447a639a99d66ffe2398daac0ac">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/28/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/52.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="dafcd179c81415cb4011a907dd6d9f16244f5bf4">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/52/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/4.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="e70cd98e847eba70a8e842dc56d09628e6359c62">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/40.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="40d6c04c2dcfe748602560ec1ce47cf97fcf35d9">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/40/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/37.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="c095704a86a7bb24a9d5506ac0cf5995cba3ea82">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/37/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/14.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="a16b0c19ad7ea0d0098866e7e1efff35b7cba1f2">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/14/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/3.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="da8d7ea4d57c79344cb280fddade1c7bc5155011">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/25.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="3f09ae9b9b1702e713621c729661e5bd97d2dec3">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/25/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/16.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="0c697dd5403fb5837827e23e36cb7a4e6e99fc34">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/16/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/34.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="74a10dfe31d9433769689bb30549b7df765f52b9">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/34/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/31.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="fbe86357a56c1a1e9aeb583810ca31855066e0d6">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/31/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/54.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="c5c58d299d25e68cd29819b5c1a05115de365e66">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/54/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/36.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="b37f795f6a6c3fcc6c7eaf90f406628a09f752eb">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/36/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/39.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="15d6e94c24ab0a2b42d5ecbf7dfaac3f72fcfd39">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/39/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/11.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="f4282e3d6c0f59c15a1b74332580953a165b5f5a">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/11/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/10.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="6ac81836f940a9ef57895a1896e89a89e4ca519a">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/10/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/38.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="21b8548da9070b9f65e6c46f75bbb57f53c3fa7f">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/38/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/49.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="0bc293f4f0b55e3423810110b777784a42c8a343">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/49/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/5.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="f0b06e9f5da7f4e9fb8733dad817fcb48b82314e">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/22.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="4d34ce1aa0ebf22ca8151c8c5b311e591cec306e">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/22/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/51.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="2afc938f972c114d32fe4696b26572d27a1be1b7">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/51/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/32.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="bc74a90867b720a757a8cfb041c8ce81e51ad396">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/32/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/42.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="6ad4dbaf0fccd5868be7666d7f31765c1543953f">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/42/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/24.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="e254877848262447baca05c26a8846b9d195a55b">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/24/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/13.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="14396579e856f9cb92945b918ff5d9a257ad6cd7">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/13/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/27.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="5fa1a91bb171a6b25f17e9cdf432d354279f6e6f">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/27/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/30.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="946012c81e955d34f14cdfb8b56281c62a95b0cb">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/30/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/50.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="922a56adba944f457235c09ec34c44a11cf9614a">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/50/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/desugar/release/48.jar"
+        jumboMode="false"
+        min-sdk-version="26"
+        optimize="true"
+        revision="29.0.0"
+        sha1="843c699384016ad5d89c8d31eba22b719a71a9cf">
+        <dex dex="/local/code/SettingsQ/SettingsQ/app/build/intermediates/transforms/preDex/release/48/classes.dex" />
+    </item>
+
+</items>
